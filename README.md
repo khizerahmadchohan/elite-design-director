@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src=".github/social-preview.png" alt="Elite Design Director: Claude Code skill for web design, UI/UX, SVG logos and illustrations" width="100%">
-
 # Elite Design Director
 
 ### Make Claude design websites that don't look AI-generated.
@@ -18,6 +16,8 @@ Websites · Landing pages · Dashboards · Elementor · SVG logos · Illustratio
 [![GitHub stars](https://img.shields.io/github/stars/GenAIwithMS/elite-design-director?style=for-the-badge&color=0F766E)](https://github.com/GenAIwithMS/elite-design-director/stargazers)
 
 **[Install](#install)** &nbsp;·&nbsp; **[Use](#use)** &nbsp;·&nbsp; **[Why use it](#why-use-it)** &nbsp;·&nbsp; **[Features](#features)** &nbsp;·&nbsp; **[FAQ](#faq)**
+
+<img src=".github/social-preview.png" alt="Elite Design Director: Claude Code skill for web design, UI/UX, SVG logos and illustrations" width="100%">
 
 </div>
 
