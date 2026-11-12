@@ -1,0 +1,14 @@
+# Workflow: Dashboard / SaaS App (Operate mode)
+
+1. **Tasks before screens.** List the top 5 user tasks with frequency (daily/weekly/rare) and the user type (operator, manager, admin). The most frequent task gets the shortest path.
+2. **Information architecture.** Destinations (≤6 → top nav; ~7+ or deep → sidebar), object model (what are the nouns: vehicles, bookings, invoices), and the primary view for each.
+3. **Data reality.** For every region: realistic min/typical/max data, and the loading/empty/error/partial/permission states. Plan pagination/virtualization for large sets.
+4. **Hierarchy per screen.** Page title + primary action → decision-relevant summary (only metrics someone acts on, with comparison context) → main working surface (table/list/board/calendar) → secondary panels. One main chart if charts matter. Tables before cards.
+4b. **Research (Section tier, new screens only):** Dribbble and live products for this screen type (e.g., `booking management table`, `fleet operations dashboard`). Focus on information hierarchy, table and filter patterns, and states, not decoration (`references/visual-research.md`). Inside an existing app, inherit its system (`references/site-consistency.md`).
+5. **System.** Workhorse sans, 14–16px base, 1.125–1.2 scale, restrained color (neutral surfaces, one accent for primary actions/selection, semantic colors for status with non-color cues), dense spacing (`design-intelligence.md` §5 density 7–9: upper standard to dense), one elevation strategy (usually hairlines + surface steps).
+6. **Components.** Use the project's kit (shadcn, MUI, Ant, etc.) or native elements; all 7–8 states; forms per `references/component-patterns.md`; tables with sort, filter, sticky header, row actions reachable by keyboard and touch; keyboard shortcuts for power tasks (no animation on them).
+7. **Interaction.** Motion only for feedback and spatial continuity, 120–250ms. No page-load choreography. Optimistic updates with rollback; undo over confirm; skeletons over spinners for content; toast + inline status for async results.
+8. **URL state** for filters, tabs, sort, pagination, selected item. Back/forward work.
+9. **Data visualization** (load the `dataviz` skill if available): pick the chart by question (trend → line; comparison → bar; part-to-whole with ≤5 parts → stacked bar, not pie; distribution → histogram), direct labels over legends where possible, accessible palette, a table fallback, units and periods always visible.
+10. **Responsive.** Decide what the mobile app is *for* (often monitoring + quick actions, not full admin). Tables collapse to rows; sidebar becomes a drawer or bottom nav.
+11. **Verify:** keyboard walk through the top tasks, stress data (long names, 0 and 10k rows), responsive shots, accessibility checklist, critique with personas *power user* + *keyboard user* + *first-timer*, final gate.
