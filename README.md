@@ -36,7 +36,7 @@ It designs websites, landing pages, sections, dashboards and components, and dra
 Requirements: Claude Code, Node.js 22+, and Chrome or Edge (for the checking scripts). Python 3 with Pillow is needed only for `trace.py`. No npm packages and no paid APIs.
 
 ```sh
-git clone https://github.com/GenAIwithMS/elite-design-director.git
+git clone https://github.com/khizerahmadchohan/elite-design-director.git
 cd elite-design-director
 ./install.sh          # macOS / Linux / Git Bash
 .\install.ps1         # Windows PowerShell
